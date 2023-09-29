@@ -11,6 +11,7 @@ Step3 : Create a Model class that contains code like
            )
 
 Step4 : Create an Adapter that will inflate single item to RecyclerView, returns number of list items to be shown in RecyclerView and also Populates given list items in single element
+          
           //step1: Create adapter class
           //step3: inherit from RecyclerView.adapter and pass Adapter.ViewHolder as generic type
           //step4: implement member functions
@@ -42,6 +43,7 @@ Step4 : Create an Adapter that will inflate single item to RecyclerView, returns
           }
 
 Step5 : Add changes in MainActivity 
+          
           class MainActivity : AppCompatActivity() {
           
             //step1: Create ViewBinding of MainActivity
@@ -87,5 +89,5 @@ Step5 : Add changes in MainActivity
               
               //step7: assign Adapter class object to MainActivityBinding adapter
               binding.rv.adapter = adapter
-    }
-}
+              }
+           }
