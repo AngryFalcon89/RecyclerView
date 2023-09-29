@@ -20,12 +20,13 @@ data class Model(
     var videoTitle: String,
     var channelThumbnail: Int
 )
+```
 
 ## Step 4: Create an Adapter
 
 - Create an Adapter class that will inflate single item to RecyclerView, returns number of list items to be shown in RecyclerView and also Populates given list items in single element
 
-          ```kotlin
+```kotlin
           //step1: Create adapter class
           //step3: inherit from RecyclerView.adapter and pass Adapter.ViewHolder as generic type
           //step4: implement member functions
@@ -55,10 +56,11 @@ data class Model(
                   holder.binding.videoTitle.text = dataList.get(position).videoTitle
               }
           }
+```
 
 ## Step 5: Add changes in MainActivity 
 
-           ```kotlin
+```kotlin
           class MainActivity : AppCompatActivity() {
           
             //step1: Create ViewBinding of MainActivity
@@ -106,3 +108,4 @@ data class Model(
               binding.rv.adapter = adapter
               }
            }
+```
