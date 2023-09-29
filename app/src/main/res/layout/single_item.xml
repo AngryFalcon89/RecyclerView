@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:id="@+id/videoThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="The Beauty of Existence - Heart Touching Nasheed"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+            app:layout_constraintEnd_toEndOf="@+id/videoThumbnail"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.75" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="38sp"
+            android:layout_height="38sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintEnd_toEndOf="@+id/videoThumbnail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/videoThumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/videoThumbnail">
+
+            <ImageView
+                android:id="@+id/channelThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:srcCompat="@drawable/profile_pic" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/viewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="19,210,251 views Jul 1, 2023"
+            app:layout_constraintEnd_toEndOf="@+id/videoTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/videoTitle"
+            app:layout_constraintTop_toBottomOf="@+id/videoTitle" />
+
+        <ImageButton
+            android:id="@+id/optionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="options"
+            android:scaleType="fitEnd"
+            app:layout_constraintEnd_toEndOf="@+id/videoThumbnail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/videoThumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/videoThumbnail"
+            app:srcCompat="@drawable/baseline_more_vert_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
