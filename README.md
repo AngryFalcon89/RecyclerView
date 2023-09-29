@@ -1,17 +1,31 @@
-# RecyclerView
-creating a recycler View is a Five Step Process 
-Step1 : Drag & Drop Recycler View in MainActivity Layout file
-Step2 : Create a Single list item UI for your RecyclerView 
-Step3 : Create a Model class that contains code like 
+# RecyclerView 
 
-           data class Model(
-              var videoThumbnail: Int,
-              var videoTitle: String,
-              var channelThumbnail: Int
-           )
+This README provides a step-by-step guide to setting up a RecyclerView in your Android app.
 
-Step4 : Create an Adapter that will inflate single item to RecyclerView, returns number of list items to be shown in RecyclerView and also Populates given list items in single element
-          
+## Step 1: Add RecyclerView to MainActivity Layout
+
+- Drag and drop a RecyclerView widget onto your MainActivity layout file.
+
+## Step 2: Create a Single List Item Layout
+
+- Design a single list item layout for your RecyclerView. This layout defines how each item will look.
+
+## Step 3: Create a Model Class
+
+- Define a data class that represents the data for each item in your RecyclerView. For example:
+
+```kotlin
+data class Model(
+    var videoThumbnail: Int,
+    var videoTitle: String,
+    var channelThumbnail: Int
+)
+
+## Step 4: Create an Adapter
+
+- Create an Adapter class that will inflate single item to RecyclerView, returns number of list items to be shown in RecyclerView and also Populates given list items in single element
+
+          ```kotlin
           //step1: Create adapter class
           //step3: inherit from RecyclerView.adapter and pass Adapter.ViewHolder as generic type
           //step4: implement member functions
@@ -42,8 +56,9 @@ Step4 : Create an Adapter that will inflate single item to RecyclerView, returns
               }
           }
 
-Step5 : Add changes in MainActivity 
-          
+## Step 5: Add changes in MainActivity 
+
+           ```kotlin
           class MainActivity : AppCompatActivity() {
           
             //step1: Create ViewBinding of MainActivity
