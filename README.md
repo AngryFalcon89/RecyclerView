@@ -1,6 +1,7 @@
 # RecyclerView 
 
 This README provides a step-by-step guide to setting up a RecyclerView in your Android app.
+![final](https://github.com/AngryFalcon89/RecyclerView/assets/91687355/3a990839-37f0-4784-b50f-3c5806574099)
 
 ## Step 1: Add RecyclerView to MainActivity Layout
 
